@@ -1,0 +1,21 @@
+# Identification(Register)
+POST http://localhost:8080/auth/local/register
+content-type : application/json
+Authorization: Bearer 8144e62eaad2deea0b46def9487b658340b06ec77a8ab747fd20bca80628b09ac46d212ae2542708df061b9d9bf1820af0a8282610efc37c9abbaf1f78a0a04001fdc65d3905172089d8ff3df5aced6eddeb20de6af249ab2c76e796e759c48a40d4573cc8a9ef79d638e8cc9fc871b05e4e371e03bb7e39482b94f1850a03e2
+
+{
+    "user": "bhumbordin",
+    "email": "s6502041620093@email.kmutnb.ac.th",
+    "password": "3yp@wssw0rd",
+}
+
+
+
+# Authentication(Login)
+POST http://localhost:8080/auth/local
+content-type : application/json
+
+{
+    "identifier": "bhumbordin",
+    "password": "3yp@wssw0rd"
+}
