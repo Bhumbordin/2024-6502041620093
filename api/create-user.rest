@@ -1,21 +1,10 @@
-# Identification(Register)
-POST http://localhost:8080/auth/local/register
-content-type : application/json
-Authorization: Bearer 8144e62eaad2deea0b46def9487b658340b06ec77a8ab747fd20bca80628b09ac46d212ae2542708df061b9d9bf1820af0a8282610efc37c9abbaf1f78a0a04001fdc65d3905172089d8ff3df5aced6eddeb20de6af249ab2c76e796e759c48a40d4573cc8a9ef79d638e8cc9fc871b05e4e371e03bb7e39482b94f1850a03e2
+#Identification(Register)
+POST http://localhost:8080/api/auth/local/register HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer 0eb7ee166dbd439f84c6520ed562ddf2ab65bbfc62f25dde020d797d666638559b99f250763f7d2337bda3ba9617ae86a08e14b37b12d17145412efcff4239d26835b40ce4b41dab3eba7e5994497455a5d9fb491500eca4d9fe47e8096ee43c63087913a8099eec100e010f519e848d4a55eae6b75c5764ae671368d553266b
 
 {
-    "user": "bhumbordin",
-    "email": "s6502041620093@email.kmutnb.ac.th",
-    "password": "3yp@wssw0rd",
-}
-
-
-
-# Authentication(Login)
-POST http://localhost:8080/auth/local
-content-type : application/json
-
-{
-    "identifier": "bhumbordin",
-    "password": "3yp@wssw0rd"
+    "username":"bhumbordin",
+    "email":"kaijeaw1234@gmail.com",
+    "password":"3yP@ssw0rd"
 }
